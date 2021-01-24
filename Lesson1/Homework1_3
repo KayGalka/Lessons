@@ -1,0 +1,9 @@
+n = int(input("Введите число n: "))
+
+a = str(n)
+
+n2 = a + a
+n3 = a + a + a
+sum = n + int(n2) + int(n3)
+
+print("Сумма чисел n + nn + nnn = :", sum)
