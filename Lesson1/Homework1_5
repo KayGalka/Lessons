@@ -1,0 +1,16 @@
+v = int(input("Введите значение выручки "))
+i = int(input("Введите издержки фирмы "))
+
+finrez = v - i
+
+if finrez > 0:
+    print("Прибыль - выручка больше издержек")
+    rent = finrez / v * 100
+    print("Рентабельность выручки =", rent,"%")
+    people = int(input("Введите численность сотрудников "))
+    finrez1people = finrez / people
+    print("Прибыль фирмы в расчете на 1 сотрудника =", format(finrez1people),"%")
+elif finrez < 0:
+    print("Убыток - издержки больше выручки")
+else:
+    print("Фирма работает в 0")
